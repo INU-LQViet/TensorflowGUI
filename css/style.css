@@ -128,7 +128,8 @@ li{
 }
 
 #table_contain{
-    overflow:scroll; width:auto;height:200px;
+    overflow:scroll; width:auto;height:100px;
+    visibility: hidden;
 }
 
 table, td,th{
