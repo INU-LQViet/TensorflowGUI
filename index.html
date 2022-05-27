@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensorflow GUI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/lqvfavicon.ico">
+    <script src="./js/tf.min.js"></script>
+    <script src="./js/tfjs-vis.umd.min.js"></script>
+    <script src="./js/d3@7.js"></script>
+</head>
+<body>
+    <div class="contain">
+        <section id="intro">
+            <div id="intro_contain">
+                <h2>The Tensorflow GUI</h2>
+                <p>This is project build the tensorflow app interface for.
+                    About the author:
+                </p>
+            </div>
+        </section>
+        <section id="main">
+            <div id="data_contain">
+                <h2>Choose Data csv file</h2>
+                <p> Data must be CSV file ! </p>
+                <input type="file" id="datainput" name="URLfile" accept=".csv">
+                <button id="btn_showData">Okay</button>
+                <div id="table_contain"></div>
+                <h2>Select Data </h2>
+                <h3>Select Input data</h3>
+                <div id="input_contain"></div>
+                <h3>Select Output data</h3>
+                <div id="output_contain"></div>
+                <button id="data_choose">Okay</button>
+                <!-- <input type="submit" id="dataSubmit"> -->
+            </div>
+
+            <div id="build_model_contain">
+                <h2>Choose the Neural network structure</h2>
+                <label for="number-layer">Number of layer</label>
+                <input name="numberlayer" type="number" id="number-layer"
+                min="1" max="20">
+                <button id="chooseModel">Okay</button>
+                <div id="layerContain"></div>
+                
+            </div>
+        </section>
+    </div>
+    <script type="module" src="./js/app.js" ></script>
+    <!-- <script type="module" src="./js/data_analysis.js"></script> -->
+    <script type="module" src="./js/train.js"></script>
+</body>
+</html>
